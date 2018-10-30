@@ -20,9 +20,28 @@ namespace MonAggreateur
     /// </summary>
     public partial class MainWindow : Window
     {
+        NouvelleDAO nouvelleDAO = new NouvelleDAO();
         public MainWindow()
         {
             InitializeComponent();
+            nouvelle();
         }
+
+        //RSS JOURNAL
+        public void nouvelle()
+        {
+            string rssJournal = "https://www.journaldemontreal.com/rss.xml";
+
+            List<Nouvelle> listeNouvelles = nouvelleDAO.listerNouvelle(rssJournal);
+
+            foreach(Nouvelle nouvelle in listeNouvelles)
+            {
+                Console.WriteLine(nouvelle.titre);
+                Console.WriteLine(nouvelle.publication);
+                Console.WriteLine(nouvelle.resume);
+            }
+            Console.WriteLine(listeNouvelles);
+        }
+       
     }
 }
