@@ -72,6 +72,8 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Meteo.cs" />
+    <Compile Include="MeteoDAO.cs" />
     <Compile Include="Meteorite.cs" />
     <Compile Include="MeteoriteDAO.cs" />
     <Compile Include="Nouvelle.cs" />

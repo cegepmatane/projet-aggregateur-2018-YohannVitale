@@ -36,27 +36,19 @@ namespace MonAggreateur
                 string titre = lireNouvelle.ReadInnerXml();
                 Console.WriteLine(titre);
 
-                /* lireNouvelle.ReadToFollowing("link");
-                 string lien = lireNouvelle.MoveToAttribute("href").ToString();
-                 Console.WriteLine(lien);*/
 
-                lireNouvelle.ReadToFollowing("published");
-                string publication = lireNouvelle.ReadInnerXml();
-                Console.WriteLine(publication);
+                lireNouvelle.ReadToFollowing("pubDate");
+                string pubDate = lireNouvelle.ReadInnerXml();
+                Console.WriteLine(pubDate);
 
-                /*lireNouvelle.ReadToFollowing("category");
-                string categorie = lireNouvelle.MoveToAttribute("term").ToString();
-                Console.WriteLine(categorie);*/
 
                 lireNouvelle.ReadToFollowing("description");
-                string resume = lireNouvelle.ReadInnerXml();
-                Console.WriteLine(resume);
+                string description = lireNouvelle.ReadInnerXml();
+                Console.WriteLine(description);
 
                 Nouvelle nouvelle = new Nouvelle();
                 nouvelle.titre = titre;
-                //nouvelle.lien = lien;
-                nouvelle.resume = resume;
-                //nouvelle.categorie = categorie;
+                nouvelle.description = description;
 
                 listeNouvelles.Add(nouvelle);
             }

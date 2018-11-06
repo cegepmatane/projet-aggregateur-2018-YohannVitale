@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace MonAggreateur
 {
-    class Nouvelle
+    class Meteo
     {
         public string titre { get; set; }
-        public string description { get; set;}
-        public string pubDate { get; set; }
+        public string resume { get; set; }
+        public string publication { get; set; } 
         public string lien { get; set; }
         public string categorie { get; set; }
     }
