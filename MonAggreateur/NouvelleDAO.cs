@@ -48,7 +48,7 @@ namespace MonAggreateur
                 string categorie = lireNouvelle.MoveToAttribute("term").ToString();
                 Console.WriteLine(categorie);*/
 
-                lireNouvelle.ReadToFollowing("summary");
+                lireNouvelle.ReadToFollowing("description");
                 string resume = lireNouvelle.ReadInnerXml();
                 Console.WriteLine(resume);
 

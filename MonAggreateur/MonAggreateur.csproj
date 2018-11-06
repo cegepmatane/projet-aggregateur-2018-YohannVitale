@@ -72,6 +72,8 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Meteorite.cs" />
+    <Compile Include="MeteoriteDAO.cs" />
     <Compile Include="Nouvelle.cs" />
     <Compile Include="NouvelleDAO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
