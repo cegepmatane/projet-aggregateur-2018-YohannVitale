@@ -14,7 +14,7 @@
         <Rectangle Fill="#FFEE3324" HorizontalAlignment="Left" Height="420" Stroke="Black" VerticalAlignment="Top" Width="98"/>
         <Button x:Name="Accueil" Content="Accueil" HorizontalAlignment="Left" Margin="10,35,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
         <Button x:Name="Nouvelle" Content="Nouvelle" HorizontalAlignment="Left" Margin="10,95,0,0" VerticalAlignment="Top" Width="75" Click="Nouvelle_Click"/>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="10,134,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button x:Name="Meteo" Content="Météo" HorizontalAlignment="Left" Margin="10,134,0,0" VerticalAlignment="Top" Width="75" Click="Meteo_Click"/>
         <Button Content="Button" HorizontalAlignment="Left" Margin="10,174,0,0" VerticalAlignment="Top" Width="75"/>
         <Button Content="Button" HorizontalAlignment="Left" Margin="10,210,0,0" VerticalAlignment="Top" Width="75"/>
         <Button Content="Button" HorizontalAlignment="Left" Margin="10,249,0,0" VerticalAlignment="Top" Width="75"/>

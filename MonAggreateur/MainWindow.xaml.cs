@@ -59,10 +59,16 @@ namespace MonAggreateur
         private void Nouvelle_Click(object sender, RoutedEventArgs e)
         {
             nouvelle();
+            Console.Clear;
         }
        private void Button_Click(object sender, RoutedEventArgs e) // acceuil
         {
 
+        }
+
+        private void Meteo_Click(object sender, RoutedEventArgs e)
+        {
+            meteo();
         }
     }
 }
