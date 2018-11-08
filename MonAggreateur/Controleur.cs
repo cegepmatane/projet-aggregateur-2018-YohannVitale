@@ -1,36 +1,24 @@
 ﻿using System;
 using System.Collections.Generic;
-
-using System.Windows;
-
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace MonAggreateur
 {
-    /// <summary>
-    /// Logique d'interaction pour MainWindow.xaml
-    /// </summary>
-    public partial class MainWindow : Window
+    class Controleur
     {
         NouvelleDAO nouvelleDAO = new NouvelleDAO();
         MeteoDAO meteoDAO = new MeteoDAO();
         PokemonDAO pokemonDAO = new PokemonDAO();
-        CryptomonaieDAO cryptomonaieDAO = new CryptomonaieDAO(); 
-        public MainWindow()
-        {
-            InitializeComponent();
-           // nouvelle();
-           // meteo();
-            
-        }
 
-        //RSS JOURNAL
         public void nouvelle()
         {
             string rssJournal = "https://www.journaldemontreal.com/rss.xml";
 
             List<Nouvelle> listeNouvelles = nouvelleDAO.listerNouvelle(rssJournal);
 
-            foreach(Nouvelle nouvelle in listeNouvelles)
+            foreach (Nouvelle nouvelle in listeNouvelles)
             {
                 Console.WriteLine(nouvelle.titre);
                 Console.WriteLine(nouvelle.pubDate);
@@ -59,37 +47,5 @@ namespace MonAggreateur
             }
         }
 
-        public void cryptomonaie()
-        {
-            List<CryptoMonaie> listeMonnaies = cryptomonaieDAO.listerMonnaies();
-            foreach (CryptoMonaie monnaie in listeMonnaies)
-            {
-                Console.WriteLine("Programme principal : " + monnaie.nom);
-            }
-        }
-        private void Nouvelle_Click(object sender, RoutedEventArgs e)
-        {
-            nouvelle();
-
-        }
-       private void Button_Click(object sender, RoutedEventArgs e) // acceuil
-        {
-           
-        }
-
-        private void Meteo_Click(object sender, RoutedEventArgs e)
-        {
-            meteo();
-        }
-
-        private void Pokemon_Click(object sender, RoutedEventArgs e)
-        {
-            pokemon();
-        }
-
-        private void Cryptomonaie_Click(object sender, RoutedEventArgs e)
-        {
-            cryptomonaie();
-        }
     }
 }

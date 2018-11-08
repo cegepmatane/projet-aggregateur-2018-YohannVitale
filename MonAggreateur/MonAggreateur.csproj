@@ -40,6 +40,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Core" />
@@ -66,6 +67,9 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Controleur.cs" />
+    <Compile Include="CryptoMonaie.cs" />
+    <Compile Include="CryptomonaieDAO.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -74,10 +78,10 @@
   <ItemGroup>
     <Compile Include="Meteo.cs" />
     <Compile Include="MeteoDAO.cs" />
-    <Compile Include="Meteorite.cs" />
-    <Compile Include="MeteoriteDAO.cs" />
     <Compile Include="Nouvelle.cs" />
     <Compile Include="NouvelleDAO.cs" />
+    <Compile Include="Pokemon.cs" />
+    <Compile Include="PokemonDAO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
