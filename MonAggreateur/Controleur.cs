@@ -11,6 +11,7 @@ namespace MonAggreateur
         NouvelleDAO nouvelleDAO = new NouvelleDAO();
         MeteoDAO meteoDAO = new MeteoDAO();
         PokemonDAO pokemonDAO = new PokemonDAO();
+        CryptomonaieDAO cryptomonaieDAO = new CryptomonaieDAO();
 
         public void nouvelle()
         {
@@ -47,5 +48,13 @@ namespace MonAggreateur
             }
         }
 
+        public void cryptomonaie()
+        {
+            List<CryptoMonaie> listeMonnaies = cryptomonaieDAO.listerMonnaies();
+            foreach (CryptoMonaie monnaie in listeMonnaies)
+            {
+                Console.WriteLine("Programme principal : " + monnaie.nom);
+            }
+        }
     }
 }

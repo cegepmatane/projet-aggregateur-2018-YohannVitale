@@ -1,10 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
-
 using System.Windows;
 
 
-namespace MonAggreateur
+
+
+namespace MonAggreateur 
 {
     /// <summary>
     /// Logique d'interaction pour MainWindow.xaml
