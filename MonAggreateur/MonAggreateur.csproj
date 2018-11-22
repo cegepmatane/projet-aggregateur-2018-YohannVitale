@@ -65,7 +65,7 @@
     <Compile Include="Fenetre\VueCryptoMonaie.xaml.cs">
       <DependentUpon>VueCryptoMonaie.xaml</DependentUpon>
     </Compile>
-    <Page Include="MainWindow.xaml">
+    <Page Include="VueAccueil.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -76,8 +76,8 @@
     <Compile Include="Controleur.cs" />
     <Compile Include="CryptoMonaie.cs" />
     <Compile Include="CryptomonaieDAO.cs" />
-    <Compile Include="MainWindow.xaml.cs">
-      <DependentUpon>MainWindow.xaml</DependentUpon>
+    <Compile Include="VueAccueil.xaml.cs">
+      <DependentUpon>VueAccueil.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
     <Page Include="Fenetre\VueCryptoMonaie.xaml">

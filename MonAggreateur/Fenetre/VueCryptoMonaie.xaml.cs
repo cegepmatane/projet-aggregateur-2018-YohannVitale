@@ -20,6 +20,12 @@ namespace MonAggreateur
     public partial class VueCryptoMonaie : Window
     {
         protected CryptoMonaie cryptoMonaie = null;
+        protected Controleur controleur = null;
+
+        public void activerControleur(Controleur controleurRecu)
+        {
+            this.controleur = controleurRecu;
+        }
         public VueCryptoMonaie()
         {
             WindowStartupLocation = System.Windows.WindowStartupLocation.CenterScreen;

@@ -6,13 +6,19 @@ using System.Threading.Tasks;
 
 namespace MonAggreateur
 {
-    class Controleur
+    public class Controleur
     {
         NouvelleDAO nouvelleDAO = new NouvelleDAO();
         MeteoDAO meteoDAO = new MeteoDAO();
         PokemonDAO pokemonDAO = new PokemonDAO();
         CryptomonaieDAO cryptomonaieDAO = new CryptomonaieDAO();
         SlackDAO slackDAO = new SlackDAO();
+        VueAccueil fenetrePrincipale = null;
+
+        public void activerFenetrePrincipale(VueAccueil fenetreRecue)
+        {
+            this.fenetrePrincipale = fenetreRecue;
+        }
 
         public void nouvelle()
         {
@@ -29,6 +35,27 @@ namespace MonAggreateur
             Console.WriteLine(listeNouvelles);
         }
 
+        public void notifierBoutonMeteo()
+        {
+
+        }
+
+        protected VueCryptoMonaie vueCryptoMonaie = null;
+        public void notifierBoutonCryptoMonaie()
+        {
+
+            Console.WriteLine("notifierBoutonCryptoMonaie");
+            this.vueCryptoMonaie = new VueCryptoMonaie();
+            this.vueCryptoMonaie.Show();
+            List<CryptoMonaie> listeMonnaies = cryptomonaieDAO.listerMonnaies();
+            foreach (CryptoMonaie monnaie in listeMonnaies)
+            {
+                Console.WriteLine("Programme principal : " + monnaie.nom);
+            }
+
+        }
+
+        //Focntion sans bouton
         public void meteo()
         {
             string rssMeteoQuebec = "http://meteo.gc.ca/rss/city/qc-133_f.xml";
@@ -49,14 +76,14 @@ namespace MonAggreateur
             }
         }
 
-        public void cryptomonaie()
+       /* public void cryptomonaie()
         {
             List<CryptoMonaie> listeMonnaies = cryptomonaieDAO.listerMonnaies();
             foreach (CryptoMonaie monnaie in listeMonnaies)
             {
                 Console.WriteLine("Programme principal : " + monnaie.nom);
             }
-        }
+        }*/
         public void slack()
         {
             string listeMessages = slackDAO.listerMessagesParSalon("");

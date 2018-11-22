@@ -2,11 +2,9 @@ C:\Users\1732522\source\repos\MonAggreateur\MonAggreateur\bin\Debug\MonAggreateu
 C:\Users\1732522\source\repos\MonAggreateur\MonAggreateur\bin\Debug\MonAggreateur.exe
 C:\Users\1732522\source\repos\MonAggreateur\MonAggreateur\bin\Debug\MonAggreateur.pdb
 C:\Users\1732522\source\repos\MonAggreateur\MonAggreateur\obj\Debug\MonAggreateur.csprojAssemblyReference.cache
-C:\Users\1732522\source\repos\MonAggreateur\MonAggreateur\obj\Debug\MainWindow.g.cs
 C:\Users\1732522\source\repos\MonAggreateur\MonAggreateur\obj\Debug\App.g.cs
 C:\Users\1732522\source\repos\MonAggreateur\MonAggreateur\obj\Debug\MonAggreateur_MarkupCompile.cache
 C:\Users\1732522\source\repos\MonAggreateur\MonAggreateur\obj\Debug\MonAggreateur_MarkupCompile.lref
-C:\Users\1732522\source\repos\MonAggreateur\MonAggreateur\obj\Debug\MainWindow.baml
 C:\Users\1732522\source\repos\MonAggreateur\MonAggreateur\obj\Debug\MonAggreateur.g.resources
 C:\Users\1732522\source\repos\MonAggreateur\MonAggreateur\obj\Debug\MonAggreateur.Properties.Resources.resources
 C:\Users\1732522\source\repos\MonAggreateur\MonAggreateur\obj\Debug\MonAggreateur.csproj.GenerateResource.cache
@@ -15,3 +13,5 @@ C:\Users\1732522\source\repos\MonAggreateur\MonAggreateur\obj\Debug\MonAggreateu
 C:\Users\1732522\source\repos\MonAggreateur\MonAggreateur\obj\Debug\MonAggreateur.pdb
 C:\Users\1732522\source\repos\MonAggreateur\MonAggreateur\obj\Debug\Fenetre\VueCryptoMonaie.g.cs
 C:\Users\1732522\source\repos\MonAggreateur\MonAggreateur\obj\Debug\Fenetre\VueCryptoMonaie.baml
+C:\Users\1732522\source\repos\MonAggreateur\MonAggreateur\obj\Debug\VueAccueil.g.cs
+C:\Users\1732522\source\repos\MonAggreateur\MonAggreateur\obj\Debug\VueAccueil.baml
