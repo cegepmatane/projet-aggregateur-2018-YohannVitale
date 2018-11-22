@@ -12,6 +12,7 @@ namespace MonAggreateur
         MeteoDAO meteoDAO = new MeteoDAO();
         PokemonDAO pokemonDAO = new PokemonDAO();
         CryptomonaieDAO cryptomonaieDAO = new CryptomonaieDAO();
+        SlackDAO slackDAO = new SlackDAO();
 
         public void nouvelle()
         {
@@ -56,5 +57,11 @@ namespace MonAggreateur
                 Console.WriteLine("Programme principal : " + monnaie.nom);
             }
         }
+        public void slack()
+        {
+            string listeMessages = slackDAO.listerMessagesParSalon("");
+        }
+
+
     }
 }

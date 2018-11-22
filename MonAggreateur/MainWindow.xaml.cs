@@ -15,12 +15,12 @@ namespace MonAggreateur
         NouvelleDAO nouvelleDAO = new NouvelleDAO();
         MeteoDAO meteoDAO = new MeteoDAO();
         PokemonDAO pokemonDAO = new PokemonDAO();
-        CryptomonaieDAO cryptomonaieDAO = new CryptomonaieDAO(); 
+        CryptomonaieDAO cryptomonaieDAO = new CryptomonaieDAO();
+        SlackDAO slackDAO = new SlackDAO();
         public MainWindow()
         {
             InitializeComponent();
-           // nouvelle();
-           // meteo();
+
             
         }
 
@@ -56,7 +56,7 @@ namespace MonAggreateur
             List<Pokemon> listePokemon = pokemonDAO.listerPokemon();
             foreach (Pokemon pokemon in listePokemon)
             {
-                Console.WriteLine("Pokemon du programme principal : " + pokemon.nom);
+                Console.WriteLine("Pokemon : " + pokemon.nom);
             }
         }
 
@@ -65,9 +65,15 @@ namespace MonAggreateur
             List<CryptoMonaie> listeMonnaies = cryptomonaieDAO.listerMonnaies();
             foreach (CryptoMonaie monnaie in listeMonnaies)
             {
-                Console.WriteLine("Programme principal : " + monnaie.nom);
+                Console.WriteLine("Monaie : " + monnaie.nom);
             }
         }
+
+        public void slack()
+        {
+            string listeMessages = slackDAO.listerMessagesParSalon("");
+        }
+
         private void Nouvelle_Click(object sender, RoutedEventArgs e)
         {
             nouvelle();
@@ -91,6 +97,11 @@ namespace MonAggreateur
         private void Cryptomonaie_Click(object sender, RoutedEventArgs e)
         {
             cryptomonaie();
+        }
+
+        private void Slack_Click(object sender, RoutedEventArgs e)
+        {
+            slack();
         }
     }
 }

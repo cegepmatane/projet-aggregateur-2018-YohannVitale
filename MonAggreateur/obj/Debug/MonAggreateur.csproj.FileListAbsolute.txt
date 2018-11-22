@@ -13,3 +13,5 @@ C:\Users\1732522\source\repos\MonAggreateur\MonAggreateur\obj\Debug\MonAggreateu
 C:\Users\1732522\source\repos\MonAggreateur\MonAggreateur\obj\Debug\MonAggreateur.csproj.CoreCompileInputs.cache
 C:\Users\1732522\source\repos\MonAggreateur\MonAggreateur\obj\Debug\MonAggreateur.exe
 C:\Users\1732522\source\repos\MonAggreateur\MonAggreateur\obj\Debug\MonAggreateur.pdb
+C:\Users\1732522\source\repos\MonAggreateur\MonAggreateur\obj\Debug\Fenetre\VueCryptoMonaie.g.cs
+C:\Users\1732522\source\repos\MonAggreateur\MonAggreateur\obj\Debug\Fenetre\VueCryptoMonaie.baml

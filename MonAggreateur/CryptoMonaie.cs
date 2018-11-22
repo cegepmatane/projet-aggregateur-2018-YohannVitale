@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MonAggreateur
 {
-    class CryptoMonaie
+    public class CryptoMonaie
     {
         public string symbole { get; set; }
         public string nom { get; set; }
