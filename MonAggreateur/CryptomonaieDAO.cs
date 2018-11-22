@@ -10,6 +10,7 @@ namespace MonAggreateur
     {
         public List<CryptoMonaie> listerMonnaies() // les monnaies sont incompletes, sans leur valeur actuelle
         {
+            
             Console.WriteLine("cryptomonaieDAO.listerMonnaies()");
             string url = "https://www.cryptocompare.com/api/data/coinlist/";
             HttpWebRequest requeteListeMonnaies = (HttpWebRequest)WebRequest.Create(url);
@@ -23,8 +24,11 @@ namespace MonAggreateur
             var lesMonnaies = objet["Data"];
 
             List<CryptoMonaie> listecryptomonaie = new List<CryptoMonaie>();
+            int tour = 0;
             foreach (dynamic itemMonnaie in lesMonnaies)
             {
+                if (tour > 10)
+                    break;
                 //Console.WriteLine(itemMonnaie.ToString());
                 // Donne : [AXIS, System.Collections.Generic.Dictionary`2[System.String, System.Object]]
                 // Même si on a [truc1, truc2] c'est pas un tableau, c'est un cle => valeur, acces avec .Key & .Value
@@ -44,6 +48,7 @@ namespace MonAggreateur
                 cryptomonaie.nombre = nombre;
                 listecryptomonaie.Add(cryptomonaie);
                 listecryptomonaie.Add(cryptomonaie);
+                tour++;
             }
 
             return listecryptomonaie;

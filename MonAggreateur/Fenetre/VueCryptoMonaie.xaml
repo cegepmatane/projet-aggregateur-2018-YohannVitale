@@ -28,5 +28,6 @@
                 </TransformGroup>
             </TextBlock.RenderTransform>
         </TextBlock>
+        <TextBlock x:Name="listeCryptoMonaie" Grid.Column="1" HorizontalAlignment="Left" Height="311" Margin="102,54,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="510" Foreground="#FFFAFAFA"/>
     </Grid>
 </Window>

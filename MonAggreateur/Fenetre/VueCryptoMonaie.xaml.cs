@@ -34,6 +34,18 @@ namespace MonAggreateur
             this.cryptoMonaie = new CryptoMonaie();
         }
 
+        public void afficherCryptoMonaie(List<CryptoMonaie> listeMonnaies)
+        {
+            this.listeCryptoMonaie.Text = "";
+            foreach (CryptoMonaie monnaie in listeMonnaies)
+            {
+                // Console.WriteLine("Programme vueCyrptomonaie : " + monnaie.nom);
+                this.listeCryptoMonaie.Text += monnaie.nom + "\n";
+
+            }
+        }
+
+        
         private void Nouvelle_Click(object sender, RoutedEventArgs e)
         {
 

@@ -48,10 +48,8 @@ namespace MonAggreateur
             this.vueCryptoMonaie = new VueCryptoMonaie();
             this.vueCryptoMonaie.Show();
             List<CryptoMonaie> listeMonnaies = cryptomonaieDAO.listerMonnaies();
-            foreach (CryptoMonaie monnaie in listeMonnaies)
-            {
-                Console.WriteLine("Programme principal : " + monnaie.nom);
-            }
+            this.vueCryptoMonaie.afficherCryptoMonaie(listeMonnaies);
+            
 
         }
 
