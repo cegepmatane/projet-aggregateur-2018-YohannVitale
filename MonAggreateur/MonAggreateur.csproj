@@ -60,12 +60,21 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Fenetre\VueNouvelle.xaml.cs">
+      <DependentUpon>VueNouvelle.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Fenetre\VuePokemon.xaml.cs">
+      <DependentUpon>VuePokemon.xaml</DependentUpon>
+    </Compile>
     <Compile Include="NavigationFenetre.cs" />
     <Compile Include="SlackDAO.cs" />
     <Compile Include="Fenetre\VueCryptoMonaie.xaml.cs">
       <DependentUpon>VueCryptoMonaie.xaml</DependentUpon>
     </Compile>
-    <Page Include="VueAccueil.xaml">
+    <Compile Include="Fenetre\VueMeteo.xaml.cs">
+      <DependentUpon>VueMeteo.xaml</DependentUpon>
+    </Compile>
+    <Page Include="Fenetre\VueAccueil.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -76,11 +85,23 @@
     <Compile Include="Controleur.cs" />
     <Compile Include="CryptoMonaie.cs" />
     <Compile Include="CryptomonaieDAO.cs" />
-    <Compile Include="VueAccueil.xaml.cs">
+    <Compile Include="Fenetre\VueAccueil.xaml.cs">
       <DependentUpon>VueAccueil.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
     <Page Include="Fenetre\VueCryptoMonaie.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Fenetre\VueMeteo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Fenetre\VueNouvelle.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Fenetre\VuePokemon.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

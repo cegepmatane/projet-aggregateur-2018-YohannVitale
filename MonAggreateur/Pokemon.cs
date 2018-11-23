@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MonAggreateur
 {
-    class Pokemon
+    public class Pokemon
     {
         public string nom { get; set; }
         public int hauteur { get; set; }

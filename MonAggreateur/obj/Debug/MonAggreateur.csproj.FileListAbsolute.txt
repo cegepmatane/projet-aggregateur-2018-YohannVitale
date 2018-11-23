@@ -13,5 +13,7 @@ C:\Users\1732522\source\repos\MonAggreateur\MonAggreateur\obj\Debug\MonAggreateu
 C:\Users\1732522\source\repos\MonAggreateur\MonAggreateur\obj\Debug\MonAggreateur.pdb
 C:\Users\1732522\source\repos\MonAggreateur\MonAggreateur\obj\Debug\Fenetre\VueCryptoMonaie.g.cs
 C:\Users\1732522\source\repos\MonAggreateur\MonAggreateur\obj\Debug\Fenetre\VueCryptoMonaie.baml
-C:\Users\1732522\source\repos\MonAggreateur\MonAggreateur\obj\Debug\VueAccueil.g.cs
-C:\Users\1732522\source\repos\MonAggreateur\MonAggreateur\obj\Debug\VueAccueil.baml
+C:\Users\1732522\source\repos\MonAggreateur\MonAggreateur\obj\Debug\Fenetre\VueAccueil.g.cs
+C:\Users\1732522\source\repos\MonAggreateur\MonAggreateur\obj\Debug\Fenetre\VueAccueil.baml
+C:\Users\1732522\source\repos\MonAggreateur\MonAggreateur\obj\Debug\VueMeteo.g.cs
+C:\Users\1732522\source\repos\MonAggreateur\MonAggreateur\obj\Debug\VueMeteo.baml

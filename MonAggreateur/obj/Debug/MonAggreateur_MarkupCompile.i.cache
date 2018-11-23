@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\1732522\source\repos\MonAggreateur\MonAggreateur\App.xaml
-21370244474
+51299991690
 
-21334430286
+24796666775
 15-2076942672
-VueAccueil.xaml;Fenetre\VueCryptoMonaie.xaml;
+Fenetre\VueAccueil.xaml;Fenetre\VueCryptoMonaie.xaml;Fenetre\VueMeteo.xaml;Fenetre\VueNouvelle.xaml;Fenetre\VuePokemon.xaml;
 
-True
+False
 

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MonAggreateur
 {
-    class Meteo
+    public class Meteo
     {
         public string titre { get; set; }
         public string resume { get; set; }
