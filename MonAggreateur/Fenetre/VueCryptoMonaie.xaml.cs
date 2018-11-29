@@ -63,7 +63,7 @@ namespace MonAggreateur
 
         private void Button_Click(object sender, RoutedEventArgs e)//Accueil
         {
-           //this.controleur.notifierBoutonAccueil();
+           this.controleur.notifierBoutonAccueil();
         }
     }
 }

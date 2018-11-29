@@ -66,6 +66,9 @@
     <Compile Include="Fenetre\VuePokemon.xaml.cs">
       <DependentUpon>VuePokemon.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Fenetre\VueSlack.xaml.cs">
+      <DependentUpon>VueSlack.xaml</DependentUpon>
+    </Compile>
     <Compile Include="NavigationFenetre.cs" />
     <Compile Include="SlackDAO.cs" />
     <Compile Include="Fenetre\VueCryptoMonaie.xaml.cs">
@@ -105,6 +108,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Fenetre\VueSlack.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Meteo.cs" />
@@ -136,7 +143,9 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

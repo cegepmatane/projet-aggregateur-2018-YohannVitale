@@ -5,9 +5,9 @@ using System.Net;
 
 namespace MonAggreateur
 {
-    class SlackDAO
+    public class SlackDAO
     {
-        public string listerSalons()
+        /*public string listerSalons()
         {
             Console.WriteLine("SalonDAO.listerSalons()");
             string json = "";
@@ -29,7 +29,7 @@ namespace MonAggreateur
             }
 
             return json;
-        }
+        }*/
 
         public string listerMessagesParSalon(string salon)
         {

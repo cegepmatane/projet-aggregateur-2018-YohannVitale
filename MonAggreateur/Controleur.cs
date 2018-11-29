@@ -1,8 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Windows;
+
 
 namespace MonAggreateur
 {
@@ -13,11 +12,25 @@ namespace MonAggreateur
         PokemonDAO pokemonDAO = new PokemonDAO();
         CryptomonaieDAO cryptomonaieDAO = new CryptomonaieDAO();
         SlackDAO slackDAO = new SlackDAO();
-        VueAccueil fenetrePrincipale = null;
+
+        Window derniereFenetre = null;
 
         public void activerFenetrePrincipale(VueAccueil fenetreRecue)
         {
-            this.fenetrePrincipale = fenetreRecue;
+            this.vueAccueil = fenetreRecue;
+            derniereFenetre = fenetreRecue;
+        }
+
+
+        protected VueAccueil vueAccueil = null;
+
+        public void notifierBoutonAccueil()
+        {
+            Console.WriteLine("notifierBoutonAccueil()");
+            this.vueAccueil = new VueAccueil(this);
+            //derniereFenetre.Close();
+            this.vueAccueil.Show();
+            this.derniereFenetre = vueAccueil;
         }
 
         protected Fenetre.VueNouvelle vueNouvelle = null;
@@ -25,35 +38,42 @@ namespace MonAggreateur
         {
             Console.WriteLine("notifierBoutonNouvelle");
             this.vueNouvelle = new Fenetre.VueNouvelle();
+            this.vueNouvelle.activerControleur(this);
+            derniereFenetre.Close();
             this.vueNouvelle.Show();
+            this.derniereFenetre = vueNouvelle;
+
             string rssJournal = "https://www.journaldemontreal.com/rss.xml";
             List<Nouvelle> listeNouvelles = nouvelleDAO.listerNouvelle(rssJournal);
             this.vueNouvelle.afficherNouvelle(listeNouvelles);
-
         }
         protected VueMeteo vueMeteo = null;
         public void notifierBoutonMeteo()
         {
             Console.WriteLine("notifierBoutonMeteo");
             this.vueMeteo = new VueMeteo();
+            this.vueMeteo.activerControleur(this);
+            derniereFenetre.Close();
             this.vueMeteo.Show();
+            this.derniereFenetre = vueMeteo;
+
             string rssMeteoQuebec = "http://meteo.gc.ca/rss/city/qc-133_f.xml";
             List<Meteo> listeMeteos = meteoDAO.listerMeteo(rssMeteoQuebec);
             this.vueMeteo.afficherMeteo(listeMeteos);
-
         }
 
         protected VueCryptoMonaie vueCryptoMonaie = null;
         public void notifierBoutonCryptoMonaie()
         {
-
             Console.WriteLine("notifierBoutonCryptoMonaie");
             this.vueCryptoMonaie = new VueCryptoMonaie();
+            this.vueCryptoMonaie.activerControleur(this);
+            derniereFenetre.Close();
             this.vueCryptoMonaie.Show();
+            this.derniereFenetre = vueCryptoMonaie;
+
             List<CryptoMonaie> listeMonnaies = cryptomonaieDAO.listerMonnaies();
             this.vueCryptoMonaie.afficherCryptoMonaie(listeMonnaies);
-
-
         }
 
         protected Fenetre.VuePokemon vuePokemon = null;
@@ -61,10 +81,25 @@ namespace MonAggreateur
         {
             Console.WriteLine("notifierBoutonPokemon");
             this.vuePokemon = new Fenetre.VuePokemon();
+            this.vuePokemon.activerControleur(this);
+            derniereFenetre.Close();
             this.vuePokemon.Show();
+            this.derniereFenetre = vuePokemon;
+
             List<Pokemon> listePokemons = pokemonDAO.listerPokemon();
             this.vuePokemon.afficherPokemon(listePokemons);
         }
+
+        /*protected Fenetre.VueSlack vueSlack = null;
+        public void notifierBoutonSlack()
+        {
+            Console.WriteLine("notifierBoutonPokemon");
+            this.vueSlack = new Fenetre.VueSlack;
+            this.vueSlack.activerControleur(this);
+            this.vueSlack.Show();
+            
+        }*/
+
 
         /*public void nouvelle()
         {

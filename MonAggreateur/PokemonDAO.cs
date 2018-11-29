@@ -29,13 +29,17 @@ namespace MonAggreateur
             string nombre = objet["count"].ToString();
 
             dynamic[] listePokemonDynamiques = objet["results"];
+            int tour = 0;
             foreach (dynamic pokemonDynamique in listePokemonDynamiques)
             {
+                if (tour > 10)
+                    break;
                 Pokemon pokemon = new Pokemon();
                 pokemon.nom = pokemonDynamique["name"].ToString();
                 string source = pokemonDynamique["url"].ToString();
                 Console.WriteLine(pokemon.nom + " - " + source);
                 listePokemon.Add(pokemon);
+                tour++;
             }
 
             Console.WriteLine(nombre + " pokemons recus");

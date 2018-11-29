@@ -37,9 +37,9 @@ namespace MonAggreateur.Fenetre
             //Console.WriteLine(listePokemons);
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void Button_Click(object sender, RoutedEventArgs e) // Accueil
         {
-
+            this.controleur.notifierBoutonAccueil();
         }
 
         private void Nouvelle_Click(object sender, RoutedEventArgs e)

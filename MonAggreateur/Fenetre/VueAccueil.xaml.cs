@@ -17,9 +17,21 @@ namespace MonAggreateur
         PokemonDAO pokemonDAO = new PokemonDAO();
         CryptomonaieDAO cryptomonaieDAO = new CryptomonaieDAO();
         SlackDAO slackDAO = new SlackDAO();
-        protected Controleur controleur = new Controleur();
+        protected Controleur controleur = null;
+        public VueAccueil(Controleur controleur)
+        {
+            this.controleur = controleur;
+
+            WindowStartupLocation = System.Windows.WindowStartupLocation.CenterScreen;
+            InitializeComponent();
+            this.controleur.activerFenetrePrincipale(this);
+
+        }
+
         public VueAccueil()
         {
+            this.controleur = new Controleur();
+
             WindowStartupLocation = System.Windows.WindowStartupLocation.CenterScreen;
             InitializeComponent();
             this.controleur.activerFenetrePrincipale(this);
@@ -34,6 +46,7 @@ namespace MonAggreateur
         }
         private void Button_Click(object sender, RoutedEventArgs e) // acceuil
         {
+            
             //this.controleur.notifierBoutonAccueil();
         }
 
