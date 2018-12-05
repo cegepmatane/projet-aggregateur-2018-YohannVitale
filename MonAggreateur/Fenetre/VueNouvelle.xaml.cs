@@ -42,6 +42,7 @@ namespace MonAggreateur.Fenetre
             {
                 //Console.WriteLine(nouvelle.titre);
                 this.listeTitreNouvelle.Text += nouvelle.titre +'\n';
+                //this.listeNouvelleUn += nouvelle.titre + '\n';
                 //Console.WriteLine(nouvelle.pubDate);
                 this.listeTitreNouvelle.Text += nouvelle.pubDate + '\n';
                 //Console.WriteLine(nouvelle.description);

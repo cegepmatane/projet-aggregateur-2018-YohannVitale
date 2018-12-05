@@ -15,6 +15,9 @@ namespace MonAggreateur
 
         Window derniereFenetre = null;
 
+        Favorit favoritPublic = new Favorit("Je suis public").avecCouleur("rouge").seraPublic().avecDescription("Je suis public ptit Cat").avecMotsClef("animal");
+        Favorit favoritPrive = new Favorit("je suis prive").avecCouleur("Vert").seraPrive().avecDescription("Je suis prive Boubourse").avecMotsClef("ch'ti");
+
         public void activerFenetrePrincipale(VueAccueil fenetreRecue)
         {
             this.vueAccueil = fenetreRecue;
@@ -57,8 +60,8 @@ namespace MonAggreateur
             this.vueMeteo.Show();
             this.derniereFenetre = vueMeteo;
 
-            string rssMeteoQuebec = "http://meteo.gc.ca/rss/city/qc-133_f.xml";
-            List<Meteo> listeMeteos = meteoDAO.listerMeteo(rssMeteoQuebec);
+            //string rssMeteoQuebec = "http://meteo.gc.ca/rss/city/qc-133_f.xml";
+            List<Meteo> listeMeteos = meteoDAO.listerMeteo();
             this.vueMeteo.afficherMeteo(listeMeteos);
         }
 

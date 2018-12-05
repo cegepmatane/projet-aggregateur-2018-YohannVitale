@@ -28,6 +28,9 @@
                 </TransformGroup>
             </TextBlock.RenderTransform>
         </TextBlock>
-        <TextBlock x:Name="listeTitreNouvelle" Grid.Column="1" HorizontalAlignment="Left" Height="311" Margin="102,54,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="510" Foreground="#FFFAFAFA" Background="Black"/>
+        <TextBlock x:Name="listeTitreNouvelle" Grid.Column="1" HorizontalAlignment="Left" Height="60" Margin="102,35,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="421" Foreground="#FFFAFAFA" Background="Black"/>
+        <Grid x:Name="listeNouvelleUn" Grid.Column="1" HorizontalAlignment="Left" Height="77" Margin="102,76,0,0" VerticalAlignment="Top" Width="517">
+            <TextBlock x:Name="listeTitreNouvelles" HorizontalAlignment="Left" Height="60" Margin="10,7,-222,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="421" Foreground="#FFFAFAFA" Background="Black"/>
+        </Grid>
     </Grid>
 </Window>

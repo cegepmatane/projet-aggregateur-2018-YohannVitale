@@ -12,8 +12,9 @@ namespace MonAggreateur
 {
     class MeteoDAO
     {
-        public List<Meteo> listerMeteo(string rss)
+        public List<Meteo> listerMeteo()
         {
+            string rss = "http://meteo.gc.ca/rss/city/qc-133_f.xml";
             List<Meteo> listeMeteos = new List<Meteo>();
 
             //Console.WriteLine("RssDAO.listerMeteo(" + rss + ")");

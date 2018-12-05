@@ -25,7 +25,7 @@ namespace MonAggreateur
             XElement nouvellesXML = XElement.Parse(xmlNouvelle);
 
 
-            foreach (XElement nouvelleXML in nouvellesXML.Elements())
+            foreach (XElement nouvelleXML in nouvellesXML.Descendants("item"))
             {
                 // Console.WriteLine(nouvelleXML.ToString());
                 //XDocument nouvelleDoc = nouvelleXML.Document;

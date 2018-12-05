@@ -60,6 +60,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Favorit.cs" />
     <Compile Include="Fenetre\VueNouvelle.xaml.cs">
       <DependentUpon>VueNouvelle.xaml</DependentUpon>
     </Compile>
